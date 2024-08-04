@@ -8,7 +8,7 @@ module.exports = {
     plugins: ['prettier'],
     overrides: [],
     parserOptions: {
-        ecmaVersion: 'latest'
+        ecmaVersion: 15
     },
     rules: {
         'no-console': 'off'
