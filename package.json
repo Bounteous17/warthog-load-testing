@@ -20,7 +20,7 @@
     "author": "",
     "license": "GPL-3.0",
     "engines": {
-        "node": ">=18 <=20"
+        "node": ">=22"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.7.2",
