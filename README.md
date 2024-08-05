@@ -49,6 +49,10 @@ The tool is ready for being integrated with a continuous integration pipeline, e
 
 - We assume that the contributors of this tool are not responsible for the damage that some users may cause to external systems that are not authorized to be tested by them.
 
+## Considerations
+
+- Since Jest v29 does [not support ECMAScript modules natively](https://jestjs.io/docs/ecmascript-modules) yet and for avoiding to use of external compilers for module-type transformations like [Babel](https://babeljs.io/) the application code must remain using CommonJS modules.
+
 ## Contribute
 
 If you want to contribute or help with the development of Warthog, start by reading `CONTRIBUTING.md`.
