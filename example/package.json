@@ -4,7 +4,7 @@
     "description": "Example of a real project for load testing Redis resource performance",
     "main": "index.js",
     "scripts": {
-        "start": "pnpm exec warthog",
+        "start": "SCRIPT_PARALLELISM=2 WARTHOG_TESTS_PATH='./scripts' pnpm exec warthog",
         "infra:up": "docker-compose -f ./docker-compose.yml up -d",
         "infra:down": "docker-compose -f ./docker-compose.yml down"
     },

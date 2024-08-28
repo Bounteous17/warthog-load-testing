@@ -2,13 +2,11 @@ services:
     warthog:
         build:
             context: ../
-            args:
-                SCRIPT_PARALLELISM: 2
-                WARTHOG_TESTS_PATH: './scripts'
-                REDIS_HOST: warthog-stress-test-redis
         container_name: warthog-stress-test-scripts
         networks:
             - warthog_stress_test
+        environment:
+            REDIS_HOST: 'warthog-stress-test-redis'
         depends_on:
             redis:
                 condition: service_started
